@@ -3,6 +3,7 @@
 ### Browse and Upload Scientific Papers on the Decentralised Web
 
 Xirva has for mission to create a research publishing platform that is community based, transparent and censorship resistant. 
+Academic research needs decentralization
 
 
 #### Features
