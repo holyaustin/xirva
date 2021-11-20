@@ -1,27 +1,8 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable max-len */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable react/react-in-jsx-scope */
-/*
-  This example requires Tailwind CSS v2.0+
-
-  This example requires some changes to your config:
-
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ]
-  }
-  ```
-*/
 import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { SearchIcon } from '@heroicons/react/solid';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -29,10 +10,11 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
+   
     <Disclosure as="nav" className="bg-white shadow">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
+        <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
             <div className="flex justify-between h-16">
               <div className="flex px-2 lg:px-0">
 
@@ -41,26 +23,49 @@ export default function Navbar() {
                     href="/"
                     className="font-medium text-4xl pb-2"
                   >
-                    Xirva
+                    DeLibrary
+                  </a>
+                </div>
+
+                <div className="flex-shrink-0 flex items-center">
+                  <img
+                    className="h-10 w-18"
+                    src="/b1.png"
+                    alt="Delibrary logo"
+                  />
+                </div>
+
+                
+                <div className="hidden lg:ml-6 lg:flex lg:space-x-8">
+                  <a
+                    href="/catebooks"
+                    className="border-indigo-500 text-gray-900 inline-flex items-center text-md font-medium"
+                  >
+                    E-books
                   </a>
                 </div>
                 <div className="hidden lg:ml-6 lg:flex lg:space-x-8">
-                  {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-
                   <a
-                    href="/upload"
+                    href="/catvideos"
                     className="border-indigo-500 text-gray-900 inline-flex items-center text-md font-medium"
                   >
-                    Upload
+                    Video-Books
                   </a>
-
                 </div>
                 <div className="hidden lg:ml-6 lg:flex lg:space-x-8">
                   <a
-                    href="/new"
+                    href="/liveclass"
                     className="border-indigo-500 text-gray-900 inline-flex items-center text-md font-medium"
                   >
-                    New
+                    Live Class 
+                  </a>
+                </div>
+                <div className="hidden lg:ml-6 lg:flex lg:space-x-8">
+                  <a
+                    href="/community"
+                    className="border-indigo-500 text-gray-900 inline-flex items-center text-md font-medium"
+                  >
+                    Community
                   </a>
                 </div>
                 <div className="hidden lg:ml-6 lg:flex lg:space-x-8">
@@ -71,7 +76,25 @@ export default function Navbar() {
                     About
                   </a>
                 </div>
+                <div className="hidden lg:ml-6 lg:flex lg:space-x-8">
+                  <a
+                    href="/upload"
+                    className="border-indigo-500 text-gray-900 inline-flex items-center text-md font-medium"
+                  >
+                    Upload
+                  </a>
+                </div>
               </div>
+
+
+
+
+
+
+
+
+
+
               <div className="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end">
                 <div className="max-w-lg w-full lg:max-w-xs">
                   <label htmlFor="search" className="sr-only">
@@ -110,7 +133,7 @@ export default function Navbar() {
                     <>
                       <div>
                         <Menu.Button className="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                          <span className="sr-only">Open user menu</span>
+                          <span className="sr-only">User menu</span>
                         </Menu.Button>
                       </div>
                       <Transition

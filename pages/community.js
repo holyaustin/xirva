@@ -1,52 +1,55 @@
 import { React } from 'react';
-import { CodeIcon, LightningBoltIcon,
-  AcademicCapIcon,   CalculatorIcon,
+import { CodeIcon, LightningBoltIcon, 
+  LinkIcon,  HashtagIcon,
   LightBulbIcon,  BookOpenIcon,  
-  VideoCameraIcon,} from '@heroicons/react/outline';
+  } from '@heroicons/react/outline';
+
+
 import Navbar from '../components/navbar';
+import { PlayIcon } from '@heroicons/react/solid';
 
 const features = [
   {
-    name: 'Hundreds of Academic E-Books ',
+    name: 'Discord Server ',
     description:
-      'The Library has more books that you could imagine. E-books repository are decentralized (IPFS Storage). ',
+      'Join our Discord Server',
     icon: BookOpenIcon,
-    href: '',
+    href: 'https://discord.com/',
   },
   {
-    name: 'Lot of Video-Books',
+    name: 'Twitter',
     description:
-      'The full video books are here for you. if you cannot read the ebook format, you can read you favorite textbooks by watching them. ',
-    icon: VideoCameraIcon,
-    href: '',
+      'Join us on Twitter ',
+    icon: HashtagIcon,
+    href: 'https://twitter.com',
   },
   {
-    name: 'No Political Censorship',
+    name: 'Telegram',
     description:
-      'No fear from government of your country not allowing certain books. You can read or watch them here',
+      'Join us on Telegram',
     icon:LightBulbIcon,
-    href: '',
+    href: 'https://telegram.org/',
   },
   {
-    name: 'Learn and Earn',
+    name: 'Facebook',
     description:
-      'The very First decentralized Library where you LEARN and EARN',
-    icon: AcademicCapIcon,
-    href: '',
+      'Join us on Facebook',
+    icon: LinkIcon,
+    href: 'https://facebook.com',
   },
   {
-    name: 'No Loss of Books',
+    name: 'YouTube',
     description:
-      'Prevent the accidental or intentional loss of information from human consciousness',
-    icon: LightningBoltIcon,
-    href: '',
+      'Join us on YouTubes',
+    icon: PlayIcon,
+    href: 'https://www.youtube.com/',
   },
   {
-    name: 'Live Class Streaming',
+    name: 'GitHub',
     description:
-      'Lecturers / Teachers can use this platform to shedule live teaching and learning. just contact us',
-    icon: LightningBoltIcon,
-    href: '',
+      'Explore our code on Github ',
+    icon: CodeIcon,
+    href: 'https://www.github.com/',
   },
 
 ];
@@ -60,12 +63,11 @@ export default function CS() {
         <div className="md:items-center">
           <center>
             <br />
-            <h2 className="text-6xl font-bold leading-1 text-black-900 sm:text-5xl hover:opacity-25">About the Project</h2>
+            <h2 className="text-6xl font-bold leading-1 text-black-900 sm:text-5xl hover:opacity-25">Join our Community</h2>
             <br />
             <br />
           </center>
         </div>
-        
         <div className="py-12 bg-white">
          
           <div className="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
