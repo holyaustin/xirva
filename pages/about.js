@@ -1,52 +1,26 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable import/extensions */
 import { React } from 'react';
-import { CodeIcon, LightningBoltIcon,
-  AcademicCapIcon,   CalculatorIcon,
-  LightBulbIcon,  BookOpenIcon,  
-  VideoCameraIcon,} from '@heroicons/react/outline';
+import { CodeIcon, LightningBoltIcon } from '@heroicons/react/outline';
 import Navbar from '../components/navbar';
 
 const features = [
   {
-    name: 'Hundreds of Academic E-Books ',
+    name: 'Hosted on IPFS using Fleek',
     description:
-      'The Library has more books that you could imagine. E-books repository are decentralized (IPFS Storage). ',
-    icon: BookOpenIcon,
-    href: '',
-  },
-  {
-    name: 'Lot of Video-Books',
-    description:
-      'The full video books are here for you. if you cannot read the ebook format, you can read you favorite textbooks by watching them. ',
-    icon: VideoCameraIcon,
-    href: '',
-  },
-  {
-    name: 'No Political Censorship',
-    description:
-      'No fear from government of your country not allowing certain books. You can read or watch them here',
-    icon:LightBulbIcon,
-    href: '',
-  },
-  {
-    name: 'Learn and Earn',
-    description:
-      'The very First decentralized Library where you LEARN and EARN',
-    icon: AcademicCapIcon,
-    href: '',
-  },
-  {
-    name: 'No Loss of Books',
-    description:
-      'Prevent the accidental or intentional loss of information from human consciousness',
+      'This frontend is hosted itself on IPFS, using Fleek.co ⚡, we love their service, go check them out!',
     icon: LightningBoltIcon,
-    href: '',
+    href: 'https://github.com/hugoroussel/xirva',
   },
   {
-    name: 'Live Class Streaming',
+    name: 'Open Source',
     description:
-      'Lecturers / Teachers can use this platform to shedule live teaching and learning. just contact us',
-    icon: LightningBoltIcon,
-    href: '',
+      'The full repository is open-source, ⭐ or PR us on',
+    icon: CodeIcon,
+    href: 'https://github.com/hugoroussel/xirva',
   },
 
 ];
@@ -57,19 +31,16 @@ export default function CS() {
       <Navbar />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <br />
-        <div className="md:items-center">
-          <center>
-            <br />
-            <h2 className="text-6xl font-bold leading-1 text-black-900 sm:text-5xl hover:opacity-25">About the Project</h2>
-            <br />
-            <br />
-          </center>
-        </div>
-        
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <div className="py-12 bg-white">
-         
           <div className="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-            <h2 className="sr-only"></h2>
+            <h2 className="sr-only">A better way to send money.</h2>
             <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-8">
               {features.map((feature) => (feature.name === 'Open Source' ? (
                 <div key={feature.name}>
@@ -82,7 +53,7 @@ export default function CS() {
                   <dd className="mt-2 text-base text-gray-500">
                     {feature.description}
                     {' '}
-                    <a href={feature.href} className="hover:underline text-indigo-500"></a>
+                    <a href={feature.href} className="hover:underline text-indigo-500">Github</a>
     
                   </dd>
 
@@ -102,7 +73,6 @@ export default function CS() {
               ))}
             </dl>
           </div>
-        
         </div>
 
       </div>
